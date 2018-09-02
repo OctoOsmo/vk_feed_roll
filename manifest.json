@@ -1,0 +1,33 @@
+{
+  "name": "Clear your vk feed",
+  "version": "1.0",
+  "description": "removes top posts from feed!",
+  "permissions": [
+    "activeTab",
+    "declarativeContent",
+    "storage"
+  ],
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": false
+  },
+  "options_page": "options.html",
+  "page_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/roll_16.png",
+      "32": "images/roll_32.png",
+      "48": "images/roll_48.png",
+      "128": "images/roll_128.png"
+    }
+  },
+  "icons": {
+    "16": "images/roll_16.png",
+    "32": "images/roll_32.png",
+    "48": "images/roll_48.png",
+    "128": "images/roll_128.png"
+  },
+  "manifest_version": 2
+}
