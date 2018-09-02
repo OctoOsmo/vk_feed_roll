@@ -1,10 +1,13 @@
 let changeColor = document.getElementById('changeColor');
 
 changeColor.onclick = function () {
-    chrome.tabs.query({active: true, currentWindow: true}, function (tabs) {
+    chrome.tabs.query({
+        active: true,
+        currentWindow: true
+    }, function (tabs) {
         chrome.tabs.executeScript(
-            tabs[0].id,
-            {file: 'clearFeed.js'});
+            tabs[0].id, {
+                file: 'clearFeed.js'
+            });
     });
 };
-

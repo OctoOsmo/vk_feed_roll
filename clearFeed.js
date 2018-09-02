@@ -1,8 +1,8 @@
 function clearFeed() {
-    let el = document.getElementById('page_wall_posts');
-    const count = el.childElementCount;
+    let element = document.getElementById('page_wall_posts');
+    const count = element.childElementCount;
     for (let i = 1; i < count - 20; i++) {
-        el.childNodes[1].remove();
+        element.childNodes[1].remove();
     }
 }
 
